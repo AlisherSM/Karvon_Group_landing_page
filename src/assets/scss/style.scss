@@ -12,11 +12,16 @@ body {
 *:after {
     box-sizing: border-box;
 }
+p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
 .container {
     
     margin: 0 auto;
+    padding: 0px 10px;
     
-    width: 100vw;
+    width: 98vw;
     max-width: 1400px;
     
     
@@ -28,3 +33,5 @@ body {
 
 @import "src/assets/scss/blocks/header.scss";
 @import "src/assets/scss/blocks/intro.scss";
+@import "src/assets/scss/blocks/about.scss";
+@import "src/assets/scss/blocks/gross.scss";

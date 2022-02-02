@@ -1,0 +1,28 @@
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: auto;
+    justify-content: center;
+    margin: 100px auto;
+    
+    
+}
+.about__blocks {
+    width: 90%;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    
+    &__title {
+        color: $primary;
+        font-size: 72px;
+        font-weight: 700;
+    }
+    &__text {
+        font-size: 32px;
+        font-weight: 500;
+        margin-top: 25px;
+    }
+
+}
