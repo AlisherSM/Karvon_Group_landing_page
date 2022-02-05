@@ -16,6 +16,8 @@ const notify = require("gulp-notify");
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const browserSync = require("browser-sync").create();
+const removeHtmlComments = require('gulp-remove-html-comments');
+
 
 
 /* Paths */
@@ -70,6 +72,8 @@ function html(cb) {
             helpers:    srcPath + 'helpers/',
             data:       srcPath + 'data/'
         }))
+        .pipe(removeHtmlComments())
+        
         .pipe(dest(path.build.html))
         .pipe(browserSync.reload({stream: true}));
 
@@ -111,6 +115,7 @@ function css(cb) {
 
     cb();
 }
+
 
 function cssWatch(cb) {
     return src(path.src.css, {base: srcPath + "assets/scss/"})
@@ -158,6 +163,7 @@ function js(cb) {
 
     cb();
 }
+
 
 function jsWatch(cb) {
     return src(path.src.js, {base: srcPath + 'assets/js/'})
