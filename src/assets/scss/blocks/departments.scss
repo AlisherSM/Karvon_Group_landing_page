@@ -2,29 +2,12 @@
     background-color: $primary; 
 }
 .departments {
-    padding: 40px;
+    padding: 40px 0;
     
     margin-top: 100px ;
     
 }
-.departments__title {
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: -1px;
-    font-size: 40px;
-    color: white;
-    margin-bottom: 25px;
-    margin-left: 25px;
-    display: flex;
-    align-items: center;
-    &::before {
-            display: block;
-            margin-right: 8px;
-            width: 25px;
-            height: 35px;
-            background-color: white;
-            content: "";
-    }
-}
+
 
 .departments__items {
     display: grid;

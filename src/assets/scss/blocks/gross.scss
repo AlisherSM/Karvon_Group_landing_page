@@ -1,30 +1,17 @@
 .gross {
     margin: 100px auto;
 }
-.gross__title {
-    text-align: end;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: -1px;
-    font-size: 40px;
-    color: $primary;
-    margin-bottom: 30px;
-    margin-left: 25px;
-    display: flex;
-    align-items: center;
-    &::before {
-            display: block;
-            margin-right: 8px;
-            width: 25px;
-            height: 35px;
-            background-color: $primary;
-            content: "";
-    }
-}
+
 .gross__content {
     display: flex;
     justify-content: space-evenly;
     margin-top: 30px;
-
+}
+.gross__title {
+    color: $primary;
+    &::before {
+        background-color: $primary;
+    }
 }
 .gross__content__left {
     width: 40%;

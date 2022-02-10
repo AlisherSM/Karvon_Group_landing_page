@@ -7,3 +7,23 @@ $defaultradius: 25px;
 $defaultshadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 
 
+// PARTS
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -1px;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    &::before {
+            display: block;
+            margin-right: 8px;
+            width: 25px;
+            height: 35px;
+            background-color: white;
+            content: "";
+    }
+}

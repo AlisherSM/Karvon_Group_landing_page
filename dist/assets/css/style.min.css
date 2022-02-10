@@ -1,3 +1,22 @@
+.title {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -1px;
+  font-size: 40px;
+  color: white;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+}
+.title::before {
+  display: block;
+  margin-right: 8px;
+  width: 25px;
+  height: 35px;
+  background-color: white;
+  content: "";
+}
+
 body {
   background-color: #fffff1;
   padding: 0;
@@ -150,30 +169,17 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: 100px auto;
 }
 
-.gross__title {
-  text-align: end;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: -1px;
-  font-size: 40px;
-  color: #3842a4;
-  margin-bottom: 30px;
-  margin-left: 25px;
-  display: flex;
-  align-items: center;
-}
-.gross__title::before {
-  display: block;
-  margin-right: 8px;
-  width: 25px;
-  height: 35px;
-  background-color: #3842a4;
-  content: "";
-}
-
 .gross__content {
   display: flex;
   justify-content: space-evenly;
   margin-top: 30px;
+}
+
+.gross__title {
+  color: #3842a4;
+}
+.gross__title::before {
+  background-color: #3842a4;
 }
 
 .gross__content__left {
@@ -216,27 +222,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .departments {
-  padding: 40px;
+  padding: 40px 0;
   margin-top: 100px;
-}
-
-.departments__title {
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: -1px;
-  font-size: 40px;
-  color: white;
-  margin-bottom: 25px;
-  margin-left: 25px;
-  display: flex;
-  align-items: center;
-}
-.departments__title::before {
-  display: block;
-  margin-right: 8px;
-  width: 25px;
-  height: 35px;
-  background-color: white;
-  content: "";
 }
 
 .departments__items {
@@ -270,4 +257,41 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-size: 24px;
   color: white;
+}
+
+.partners {
+  margin: 100px auto;
+}
+
+.partners__slider {
+  display: flex;
+  align-items: center;
+}
+
+.partners__slider2 {
+  display: flex;
+  align-items: center;
+}
+
+.partners__logo img {
+  width: 200px;
+}
+.partners__logo--small img {
+  width: 150px;
+}
+
+.partners__title {
+  color: #3842a4;
+}
+.partners__title::before {
+  background-color: #3842a4;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.slick-slide {
+  margin: 50px auto;
 }
