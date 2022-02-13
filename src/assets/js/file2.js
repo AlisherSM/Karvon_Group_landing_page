@@ -13,7 +13,7 @@ $(".partners__slider").slick ({
         autoplaySpeed: 1500,
         arrows: false,
         draggable: true,
-        
+        pauseOnHover: false,
         
 });
 $(".partners__slider2").slick ({
@@ -23,7 +23,8 @@ $(".partners__slider2").slick ({
         autoplaySpeed: 1500,
         arrows: false,
         draggable: true,
-        rtl: true
+        rtl: true,
+        pauseOnHover: false,
         
         
         
