@@ -13,7 +13,7 @@ $defaultshadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     font-family: 'Montserrat', sans-serif;
     letter-spacing: -1px;
     font-size: 54px;
-    color: white;
+    color: $primary;
     font-weight: 700;
     margin-bottom: 25px;
     margin-left: 25px;
@@ -24,7 +24,13 @@ $defaultshadow: 0 4px 30px rgba(0, 0, 0, 0.2);
             margin-right: 8px;
             width: 35px;
             height: 45px;
-            background-color: white;
+            background-color: $primary;
             content: "";
+    }
+    &--white {
+        color: white;
+        &::before {
+            background-color: white;
+        }
     }
 }

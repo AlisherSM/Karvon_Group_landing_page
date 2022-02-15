@@ -1,0 +1,37 @@
+.service {
+    padding: 50px;
+    background-color: whitesmoke;
+}
+
+.service__block {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.service__item {
+    background-color: white;
+    height: 350px;
+    margin: 20px;
+    border-radius: $defaultradius;
+    box-shadow: $defaultshadow;
+    overflow: hidden;
+    
+    h4 {
+        text-align: center;
+        margin-top: 40px;
+        color: $primary;
+        font-size: 20px;
+        
+    }
+    img {
+        height: 65%;
+        width: 100%;
+        object-fit: cover;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+}
