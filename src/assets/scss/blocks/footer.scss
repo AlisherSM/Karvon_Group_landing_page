@@ -1,0 +1,64 @@
+footer {
+    background-color: $primary;
+    width: 100%;
+    
+}
+.footer__social__items {
+    i {
+        font-size: 48px;
+        color: white;
+    }
+}
+.footer__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: inherit;
+    padding: 50px;
+}
+.footer__title {
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 25px;
+}
+.footer__address {
+    width: 200px;
+    color: white;
+    a {
+        text-decoration: none;
+        color: white;
+        
+        &:hover {
+            text-decoration: underline;
+            
+        }
+    }
+}
+.footer__contacts__item {
+    display: flex;
+    align-items: center;
+    a {
+        font-size: 20px;
+        margin-left: 10px;
+        color: white;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    i {
+        color: white;
+        font-size: 24px;
+    }
+
+}
+.footer__social__items {
+    display: flex;
+    justify-content: space-evenly;
+   a {
+       &:hover {
+           color: whitesmoke;
+       }
+   }
+}
