@@ -56,9 +56,9 @@ footer {
 .footer__social__items {
     display: flex;
     justify-content: space-evenly;
-   a {
-       &:hover {
-           color: whitesmoke;
-       }
-   }
+    i {
+        &:hover {
+            color: darken($color: white, $amount: 30%);
+        }
+    }
 }

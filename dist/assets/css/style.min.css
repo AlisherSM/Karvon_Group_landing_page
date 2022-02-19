@@ -24,6 +24,22 @@
   background-color: white;
 }
 
+.btn {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  padding: 15px 35px;
+  background-color: #3842a4;
+  border-radius: 40px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.btn:hover {
+  background-color: #2b337e;
+}
+
 body {
   background-color: #fffff1;
   padding: 0;
@@ -100,8 +116,11 @@ p, h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-size: 24px;
   text-decoration: none;
-  margin-left: 25px;
+  margin-right: 25px;
   position: relative;
+}
+.header__pagesin:nth-child(3) {
+  margin-right: 50px;
 }
 .header__pagesin:hover {
   text-shadow: 0 0 0.9px #333, 0 0 0.9px #333, 0 0 0.9px #333;
@@ -257,7 +276,7 @@ p, h1, h2, h3, h4, h5, h6 {
   border: 1px solid rgba(255, 255, 255, 0.5);
   text-align: center;
   margin: 15px;
-  padding: 40px;
+  padding: 20px 30px;
 }
 
 .departments__pic {
@@ -475,8 +494,8 @@ footer {
   display: flex;
   justify-content: space-evenly;
 }
-.footer__social__items a:hover {
-  color: whitesmoke;
+.footer__social__items i:hover {
+  color: #b3b3b3;
 }
 
 .slick-track {

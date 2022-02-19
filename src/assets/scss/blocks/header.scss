@@ -51,9 +51,11 @@
     text-transform: uppercase;
     font-size: 24px;
     text-decoration: none;
-    margin-left: 25px;
+    margin-right: 25px;
     position: relative;
-    
+    &:nth-child(3) {
+        margin-right: 50px;
+    }
     
     &:hover {
         text-shadow: 0 0 .9px #333, 0 0 .9px #333, 0 0 .9px #333;
