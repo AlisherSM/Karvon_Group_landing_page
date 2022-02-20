@@ -15,10 +15,16 @@
 .partners__logo {
     img {
         width: 200px;
+        @media (max-width:$tablet-wide) {
+            width: 150px;
+        }
     }
     &--small {
         img {
             width: 150px;
+            @media (max-width:$tablet-wide) {
+                width: 100px;
+            }
         }
     }
 }

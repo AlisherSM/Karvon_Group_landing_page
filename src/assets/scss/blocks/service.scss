@@ -1,20 +1,23 @@
 .service {
-    padding: 50px;
+    padding: 30px 10px 50px 10px;
     background-color: whitesmoke;
 }
 
 .service__block {
-    
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .service__item {
     background-color: white;
     height: 350px;
-    margin: 20px;
+    margin: 0 20px;
     border-radius: $defaultradius;
     box-shadow: $defaultshadow;
     overflow: hidden;
+    @media (max-width: $tablet-wide) {
+        margin: 0 10px;
+    }
     
     h4 {
         text-align: center;
