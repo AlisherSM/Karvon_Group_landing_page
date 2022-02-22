@@ -33,11 +33,20 @@
     margin: 10px;
     padding: 20px 30px;
     width: 90%;
-    align-items: center;
+    position: relative;
     @media (max-width: $tablet) {
         padding: 10px 15px;
         height: 200px;
         
+    }
+    
+}
+.departments__item__content {
+    @media (max-width: $tablet) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
     }
     
 }
