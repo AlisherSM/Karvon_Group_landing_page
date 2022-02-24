@@ -15,16 +15,29 @@ footer {
     align-items: flex-start;
     height: inherit;
     padding: 50px;
+    @media (max-width: $tablet) {
+        padding: 30px;
+        flex-direction: column;
+        
+    }
 }
 .footer__title {
     font-size: 32px;
     font-weight: 500;
     color: white;
     margin-bottom: 25px;
+    
+    @media (max-width: $tablet) {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
 }
 .footer__address {
-    width: 200px;
+    width: 20%;
     color: white;
+    @media (max-width: $tablet) {
+        width: 100%;
+    }
     a {
         text-decoration: none;
         color: white;
@@ -34,15 +47,19 @@ footer {
             
         }
     }
+
 }
+
 .footer__contacts__item {
     display: flex;
     align-items: center;
+    
     a {
-        font-size: 20px;
+        
         margin-left: 10px;
         color: white;
         text-decoration: none;
+        
         &:hover {
             text-decoration: underline;
         }
@@ -60,5 +77,12 @@ footer {
         &:hover {
             color: darken($color: white, $amount: 30%);
         }
+    }
+}
+.footer__address,
+.footer__contacts,.footer__social {
+    @media (max-width: $tablet) {
+        margin: 15px auto;
+        text-align: center;
     }
 }

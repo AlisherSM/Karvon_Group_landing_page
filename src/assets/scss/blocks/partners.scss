@@ -1,5 +1,11 @@
 .partners {
     margin: 100px auto;
+    @media (max-width: $tablet) {
+        margin: 75px auto;
+    @media (max-width: $mobile) {
+        margin: 50px auto 0;
+        }
+    }
 }
 
 .partners__slider {
@@ -16,14 +22,20 @@
     img {
         width: 200px;
         @media (max-width:$tablet-wide) {
-            width: 150px;
+            width: 120px;
+        }
+        @media (max-width:$mobile) {
+            width: 90px;
         }
     }
     &--small {
         img {
             width: 150px;
             @media (max-width:$tablet-wide) {
-                width: 100px;
+                width: 90px;
+            }
+            @media (max-width:$mobile) {
+                width: 60px;
             }
         }
     }

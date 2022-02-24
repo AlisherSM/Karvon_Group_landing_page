@@ -3,9 +3,13 @@
 }
 .departments {
     padding: 40px 0;
-    
     margin-top: 100px;
-    
+    @media (max-width:$tablet) {
+        margin-top: 75px;
+    }
+    @media (max-width:$mobile) {
+        margin-top: 50px;
+    }
 }
 
 
@@ -37,8 +41,12 @@
     @media (max-width: $tablet) {
         padding: 10px 15px;
         height: 200px;
-        
     }
+    @media (max-width: $mobile) {
+        padding: 8px 10px;
+        height: 150px;
+    }
+    
     
 }
 .departments__item__content {
@@ -61,6 +69,10 @@
             height: 50px;
             margin-bottom: 20px;
         }
+        @media (max-width: $mobile) {
+            height: 40px;
+            margin-bottom: 10px;
+        }
     }
 }
 .departments__content {
@@ -69,6 +81,9 @@
     color: white;
     @media (max-width: $tablet) {
         font-size: 20px;
+    }
+    @media (max-width: $mobile) {
+        font-size: 18px;
     }
     
 }

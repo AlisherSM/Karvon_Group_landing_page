@@ -14,7 +14,20 @@ $(".partners__slider").slick ({
         arrows: false,
         draggable: true,
         pauseOnHover: false,
-        
+        responsive: [
+                {
+                  breakpoint: 991,
+                  settings: {
+                    slidesToShow: 4,
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 3,
+                  }
+                },            
+              ] 
 });
 $(".partners__slider2").slick ({
         slidesToShow: 5,
@@ -25,9 +38,20 @@ $(".partners__slider2").slick ({
         draggable: true,
         rtl: true,
         pauseOnHover: false,
-        
-        
-        
+        responsive: [
+                {
+                  breakpoint: 991,
+                  settings: {
+                    slidesToShow: 4,
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 3,
+                  }
+                },            
+              ] 
 });
 
 

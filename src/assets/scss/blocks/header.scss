@@ -29,7 +29,7 @@
         height: 75px;
     }
     @media (max-width: $mobile) {
-        height: 70px;
+        height: 60px;
         margin-top: 0;
         border-radius: 0;
     }
@@ -123,12 +123,14 @@
     position: absolute;
     right: 40px;
     top: 50%;
+    
     transform: translateY(-50%);
     @media (max-width: $tablet) {
         display: flex;
         align-items: center;
         font-size: 40px;
         color: black;
+        
     }
     @media (max-width: $mobile) {
         right: 15px;

@@ -1,5 +1,11 @@
 .documents {
     margin: 100px 0;
+    @media (max-width: $tablet) {
+        margin: 75px 0;
+    }
+    @media (max-width: $mobile) {
+        margin: 50px 0;
+    }
     
 }
 .documents__content {
@@ -7,7 +13,11 @@
     padding: 30px;
     height: 600px;
     
-
+    @media (max-width: $tablet) {
+        flex-direction: column;
+        height: 950px;
+        padding: 10px;
+    }
 }
 .documents__img {
     width: 60%;
@@ -15,8 +25,16 @@
     padding: 0 30px;
     margin: 0 auto;
     position: relative;
-    &--big {
+    @media (max-width: $tablet) {
         width: 90%;
+    }
+    @media (max-width: $tablet) {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    &--big {
+        width: 100%;
         height: 320px;
         display: flex;
         justify-content: center;
@@ -64,6 +82,12 @@
     width: 40%;
     padding: 0 25px;
     margin: auto;
+    @media (max-width: $tablet) {
+        margin-top: 210px;
+        width: 100%;
+        padding: 10px;
+        
+    }
     ul {
         line-height: 50px;
         
@@ -83,11 +107,11 @@
 }
 .documents__list__title {
     font-weight: 500;
-
-    font-size: 32px;
+    margin-top: 50px;
+    font-size: 28px;
     span {
         color: $primary;
         font-weight: 700;
-        line-height: 70px;
+        
     }
 }
