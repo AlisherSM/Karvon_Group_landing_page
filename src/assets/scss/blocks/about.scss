@@ -13,21 +13,18 @@
     
 }
 .about__blocks {
-    width: 90%;
+    width: 95%;
+    padding: 2px;
     text-align: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    
-    
     &__title {
         color: $primary;
         font-size: 72px;
         font-weight: 700;
         @media (max-width: $tablet) {
-            font-size: 64px;
+            font-size: 58px;
             }
         @media (max-width: $mobile) {
-            font-size: 52px;
+            font-size: 46px;
             }
     }
     &__text {
@@ -38,7 +35,7 @@
             font-size: 28px;
             }
         @media (max-width: $mobile) {
-            font-size: 20px;
+            font-size: 18px;
             }
     }
 

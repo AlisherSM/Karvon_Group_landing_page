@@ -1,8 +1,20 @@
 .slick-track {
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 20px;
+    @media (max-width: $mobile) {
+        
+    }
     
 }
-.slick-slide {
-    margin: 50px auto;
-}
+.slick-slide,.slick-active,.slick-current,.slick-cloned {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: $mobile) {
+        margin: 25px 0;
+        
+    }
+    
+} 

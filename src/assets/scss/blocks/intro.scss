@@ -15,11 +15,11 @@
         height: 100vh;
         object-fit: cover;
         @media (max-width: $tablet) {
-            height: 60vh;
+            height: 70vh;
             }
         @media (max-width: $mobile) {
-            height: 50vh;
-            }    
+            height: 60vh;
+            }
         }
 
 }
@@ -30,16 +30,16 @@
     position: absolute;
     z-index: 100;
     @media (max-width: $tablet) {
-        height: 60vh;
+        height: 70vh;
         }
     @media (max-width: $mobile) {
-        height: 50vh;
+        height: 60vh;
         }
 }
 .intro__maintext {
     position: absolute;
     top: 60%;
-    margin-left: 8%;
+    margin-left: 15%;
     transform: translateY(-60%);
     z-index: 200;
         h2 {
@@ -47,6 +47,19 @@
             margin-bottom: 60px;
             font-size: 48px;
             font-weight: 500;
+            transform: translateY(200%);
+            opacity: 0;
+            transition: 1s;
+            &.animate {
+                opacity: 1;
+                transform: translateY(0);
+                &--2s {
+                    transition-delay: .5s;
+                }
+                &--3s {
+                    transition-delay: 1s;
+                }
+            } 
             span {
                 color: $primary;
                 font-weight: 700;
@@ -60,7 +73,7 @@
                 font-size: 28px;
                 margin-bottom: 30px;
                 }   
-             
+            
             
         }
 }

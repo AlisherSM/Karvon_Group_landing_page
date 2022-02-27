@@ -2,7 +2,6 @@
     margin: 100px auto;
     display: flex;
     flex-direction: column;
-    
     @media (max-width: $tablet) {
         margin: 75px auto;
         }
@@ -15,6 +14,13 @@
     display: flex;
     justify-content: space-evenly;
     margin-top: 30px;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition : $animtransition;
+    &.animate {
+        opacity: 1;
+        transform: translateX(0);  
+    }
     @media (max-width: $tablet) {
         flex-direction: column;
         &--reverse {
@@ -43,7 +49,7 @@
         font-size: 54px;
         }
     @media (max-width: $mobile) {
-        font-size: 46px;
+        font-size: 44px;
         }    
 }
 .gross__content__text {
@@ -69,8 +75,6 @@
     margin: 0 auto;
     border-radius: $defaultradius;
     box-shadow: $defaultshadow;
-    
-    
     @media (max-width: $tablet) {
         width: 85%;
         }
@@ -88,5 +92,13 @@
         object-fit: cover;
         max-height: 340px;
         
+    }
+}
+
+.gross__content--reverse {
+    transform: translateX(50%);
+    transition: $animtransition;
+    &.animate {
+        transform: translateX(0); 
     }
 }

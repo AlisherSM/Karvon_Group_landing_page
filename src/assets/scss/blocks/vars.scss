@@ -1,6 +1,6 @@
 $primary: #3842a4;
 $secondary: #FFFFFF;
-$bgcolor: #fffff1;
+$bgcolor: #fffff5;
 $textcolor: #000000;
 $defaultmargin: 15px;
 $defaultradius: 25px;
@@ -8,6 +8,7 @@ $defaultshadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 $tablet-wide: 1150px;
 $tablet: 991px;
 $mobile: 600px;
+$animtransition: .75s;
 
 
 
@@ -15,7 +16,7 @@ $mobile: 600px;
 
 .title {
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
     font-size: 54px;
     color: $primary;
     font-weight: 700;
@@ -23,27 +24,21 @@ $mobile: 600px;
     margin-left: 25px;
     display: flex;
     align-items: center;
-    &::before {
-            display: block;
-            margin-right: 8px;
-            width: 35px;
-            height: 45px;
-            background-color: $primary;
-            content: "";
-    }
+    border-left: 25px solid $primary;
+    word-wrap: break-word;
+    @media (max-width: $tablet) {
+        margin-left: 5px;
+        }
     &--white {
         color: white;
-        &::before {
-            background-color: white;
-            
-        }
+        border-left: 25px solid white;
     }
     @media (max-width: $tablet) {
-        font-size: 46px;
+        font-size: 44px;
         
         }
     @media (max-width: $mobile) {
-        font-size: 38px;
+        font-size: 34px;
         }
 }
 

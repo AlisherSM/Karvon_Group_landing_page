@@ -1,11 +1,7 @@
 console.log('file 2');
-
-
 import "slick-carousel";
 import $ from "jquery";
-
-// Partners swiper "https://kenwheeler.github.io/slick/"
-  
+// Partners swiper "https://kenwheeler.github.io/slick/" 
 $(".partners__slider").slick ({
         slidesToShow: 5,
         slidesToScroll: 1,
@@ -54,7 +50,14 @@ $(".partners__slider2").slick ({
               ] 
 });
 
-
- 
-
-// asad
+const animations = document.querySelectorAll('.animation');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add ('animate')
+    }
+  })
+})
+animations.forEach(animation => {
+  observer.observe(animation)
+})
