@@ -20,6 +20,10 @@
         color: $primary;
         font-size: 72px;
         font-weight: 700;
+        &::after {
+            content: "+";
+            
+        }
         @media (max-width: $tablet) {
             font-size: 58px;
             }

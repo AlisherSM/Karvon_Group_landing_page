@@ -61,3 +61,36 @@ const observer = new IntersectionObserver(entries => {
 animations.forEach(animation => {
   observer.observe(animation)
 })
+
+const time = 1000;
+const step = 1;
+
+
+function countNum (num, elem) {
+  
+  let l = document.querySelector('#' + elem);
+  let n = 0;
+  let t = Math.round (time/(num/step));
+  let interval = setInterval (() => {
+    n = n + step;
+    if (n == num) {
+      clearInterval(interval);
+    }
+    l.innerHTML = n;
+  },
+    t);
+}
+const nums = document.querySelectorAll ('.number');
+const observerNum = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      countNum (30, 'num-1');
+      countNum (15, 'num-2');
+      countNum (5, 'num-3');
+    }
+  })
+})
+nums.forEach(number => {
+  observerNum.observe(number)
+})
+

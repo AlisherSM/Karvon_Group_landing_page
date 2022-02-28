@@ -356,6 +356,9 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 72px;
   font-weight: 700;
 }
+.about__blocks__title::after {
+  content: "+";
+}
 @media (max-width: 991px) {
   .about__blocks__title {
     font-size: 58px;
