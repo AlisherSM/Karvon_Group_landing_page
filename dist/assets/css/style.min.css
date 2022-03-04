@@ -83,7 +83,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .header {
   display: flex;
   justify-content: center;
-  z-index: 500;
+  z-index: 1000;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
@@ -104,7 +104,7 @@ p, h1, h2, h3, h4, h5, h6 {
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 25px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.5);
   height: 90px;
 }
@@ -182,7 +182,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .header__pagesin {
-  color: #000000;
+  color: #000000f1;
   text-transform: uppercase;
   font-size: 20px;
   text-decoration: none;
@@ -602,8 +602,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .departments__pic svg {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   fill: white;
   margin-bottom: 40px;
 }
@@ -1046,6 +1046,112 @@ footer {
     margin: 15px auto;
     text-align: center;
   }
+}
+
+.modal__backgr {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 900;
+  transition: 0.25s;
+  visibility: hidden;
+}
+.modal__backgr.show__modal {
+  visibility: visible;
+}
+
+.modal__contacts {
+  padding: 5px 25px;
+  width: 800px;
+  background-color: whitesmoke;
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -55%) scale(0);
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 25px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: 0.25s;
+  visibility: hidden;
+}
+.modal__contacts.show__modal {
+  transform: translate(-50%, -50%) scale(1);
+  visibility: visible;
+}
+
+.modal__contacts__content {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.modal__contacts__numbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.modal__contacts__numbers p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.modal__contacts__numbers a {
+  display: flex;
+  text-decoration: none;
+  color: #000000f1;
+  font-size: 20px;
+}
+
+.modal__contacts__emails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.modal__contacts__emails p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.modal__contacts__emails a {
+  display: flex;
+  text-decoration: none;
+  color: #000000f1;
+  font-size: 20px;
+}
+
+.model__contacts__picture {
+  height: 250px;
+}
+.model__contacts__picture img {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  object-fit: cover;
+}
+@media (max-width: 1150px) {
+  .model__contacts__picture {
+    height: 175px;
+  }
+}
+
+.modal__close {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+}
+.modal__close i {
+  font-size: 28px;
+}
+.modal__close:hover {
+  cursor: pointer;
+  transform: rotate(90deg);
+  transition: 0.25s;
 }
 
 .slick-track {

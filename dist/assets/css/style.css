@@ -422,6 +422,10 @@ p, h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
+.about__blocks__title::after {
+    content: "+";
+}
+
 @media (max-width: 991px) {
     .about__blocks__title {
         font-size: 58px;
@@ -714,8 +718,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .departments__pic svg {
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     fill: white;
     margin-bottom: 40px;
 }
@@ -1259,6 +1263,19 @@ footer {
         margin: 15px auto;
         text-align: center;
     }
+}
+
+.modal__contacts {
+    height: 500px;
+    width: 600px;
+    background-color: whitesmoke;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: none;
 }
 
 .slick-track {

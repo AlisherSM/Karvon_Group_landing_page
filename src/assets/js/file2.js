@@ -8,7 +8,6 @@ $(".partners__slider").slick ({
         autoplay: true,
         autoplaySpeed: 1500,
         arrows: false,
-        draggable: true,
         pauseOnHover: false,
         responsive: [
                 {
@@ -31,9 +30,10 @@ $(".partners__slider2").slick ({
         autoplay: true,
         autoplaySpeed: 1500,
         arrows: false,
-        draggable: true,
+        
         rtl: true,
         pauseOnHover: false,
+        
         responsive: [
                 {
                   breakpoint: 991,
@@ -75,6 +75,7 @@ function countNum (num, elem) {
     n = n + step;
     if (n == num) {
       clearInterval(interval);
+      
     }
     l.innerHTML = n;
   },
@@ -90,7 +91,28 @@ const observerNum = new IntersectionObserver(entries => {
     }
   })
 })
-nums.forEach(number => {
-  observerNum.observe(number)
+nums.forEach(num => {
+  observerNum.observe(num)
 })
 
+// MODAL
+var modalContacts = document.getElementById('modal__contacts');
+var modalBG = document.getElementsByClassName("modal__backgr")[0];
+var btnContacts = document.getElementById("btn__contacts");
+var modalClose = document.getElementsByClassName("modal__close")[0];
+
+btnContacts.onclick = function() {
+    modalContacts.classList.add("show__modal");
+    modalBG.classList.add("show__modal");
+}
+modalClose.onclick = function() {
+  modalContacts.classList.remove("show__modal");
+  modalBG.classList.remove("show__modal");
+}
+
+modalBG.onclick = function() {
+  modalContacts.classList.remove("show__modal");
+  modalBG.classList.remove("show__modal");
+}
+
+// MODAL
