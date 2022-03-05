@@ -2,6 +2,21 @@ console.log('file 2');
 import "slick-carousel";
 import $ from "jquery";
 // Partners swiper "https://kenwheeler.github.io/slick/" 
+const partners = document.querySelector('.partners');
+const partnersObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add ("show");
+    } else {
+      entry.target.classList.remove ("show");
+    }
+  })
+})
+
+partnersObserver.observe(partners);
+
+
+
 $(".partners__slider").slick ({
         slidesToShow: 5,
         slidesToScroll: 1,
@@ -116,3 +131,25 @@ modalBG.onclick = function() {
 }
 
 // MODAL
+
+// MENU
+var modalMenu = document.getElementById('header__menu');
+var modalBG = document.getElementsByClassName("modal__backgr")[0];
+var btnMenu = document.getElementById("header__burger");
+var menuClose = document.getElementsByClassName("menu__close")[0];
+
+btnMenu.onclick = function() {
+  modalMenu.classList.add("show__menu");
+  modalBG.classList.add("show__modal");
+}
+modalBG.onclick = function() {
+  modalMenu.classList.remove("show__menu");
+  modalBG.classList.remove("show__modal");
+}
+menuClose.onclick = function () {
+  modalMenu.classList.remove("show__menu");
+  modalBG.classList.remove("show__modal");
+  
+}
+
+// MENU
