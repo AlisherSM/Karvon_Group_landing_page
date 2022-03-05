@@ -1,5 +1,6 @@
 .documents {
     margin: 100px 0;
+    
     @media (max-width: $tablet) {
         margin: 75px 0;
     }
@@ -10,28 +11,28 @@
 }
 .documents__content {
     display: flex;
-    padding: 30px;
-    height: 600px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
     @media (max-width: $tablet) {
         flex-direction: column;
-        height: 750px;
-        padding: 10px;
+        
+        
     }
     
 }
 .documents__img {
     width: 60%;
     height: auto;
-    padding: 0 30px;
+    
     margin: 0 auto;
-    position: relative;
     transition: $animtransition;
     opacity: 0;
     transform: translateX(-50%);
     @media (max-width: $tablet) {
         width: 90%;
     }
-    @media (max-width: $tablet) {
+    @media (max-width: $mobile) {
         width: 100%;
         padding: 0;
         margin: 0;
@@ -56,12 +57,12 @@
             }
     }
     &--medium {
-        position: absolute;
-        top: 270px;
-        left: 8%;
+        
         width: 50%;
         height: 250px;
         display: flex;
+        margin-top: -8%;
+        margin-left: 20px;
         justify-content: center;
         align-items: center;
         overflow: hidden;
@@ -75,10 +76,9 @@
             }
     }
     &--small {
-        position: absolute;
-        top: 300px;
-        left: 62%;
         width: 30%;
+        margin-top: -30%;
+        margin-left: 60%;
         height: 150px;
         display: flex;
         justify-content: center;
@@ -98,9 +98,8 @@
 .documents__list {
     width: 40%;
     padding: 0 25px;
-    margin: auto;
+    
     @media (max-width: $tablet) {
-        margin-top: 130px;
         width: 100%;
         padding: 10px;
         

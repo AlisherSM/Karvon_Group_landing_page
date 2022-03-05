@@ -2,6 +2,7 @@
     margin: 100px auto;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
     @media (max-width: $tablet) {
         margin: 75px auto;
         }
@@ -11,6 +12,7 @@
 }
 
 .gross__content {
+    
     display: flex;
     justify-content: space-evenly;
     margin-top: 30px;
