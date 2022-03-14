@@ -95,7 +95,16 @@ function css(cb) {
             includePaths: './node_modules/'
         }))
         .pipe(autoprefixer({
-            cascade: true
+            overrideBrowserslist: ['last 8 versions'],
+            browsers: [
+                'Android >=4',
+                'Chrome >= 20',
+                'Firefox >= 24',
+                'Explorer >= 11',
+                'iOS >= 6',
+                'Opera >= 12',
+                'Safari >=6',
+            ],
         }))
         .pipe(cssbeautify())
         .pipe(dest(path.build.css))
