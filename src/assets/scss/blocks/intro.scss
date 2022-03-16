@@ -7,6 +7,7 @@
     @media (max-width: $mobile) {
         margin-bottom: 50px;
         }
+         
         img {
         display: flex;
         justify-content: center;
@@ -16,11 +17,16 @@
         object-fit: cover;
         @media (max-width: $tablet) {
             height: 70vh;
-            }
+           
+        }
         @media (max-width: $mobile) {
             height: 60vh;
             }
+        @media (max-height:800px) {
+            height: 100vh;
+            }
         }
+       
 
 }
 .intro__darken {
@@ -35,6 +41,9 @@
     @media (max-width: $mobile) {
         height: 60vh;
         }
+    @media (max-height:800px) {
+        height: 100vh;
+    }
 }
 .intro__maintext {
     position: absolute;
