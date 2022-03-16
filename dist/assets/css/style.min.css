@@ -463,14 +463,14 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 991px) {
   .intro__maintext h2 {
-    font-size: 35px;
-    margin-bottom: 40px;
+    font-size: 32px;
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 600px) {
   .intro__maintext h2 {
     font-size: 26px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 
