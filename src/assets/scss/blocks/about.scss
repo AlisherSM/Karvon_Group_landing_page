@@ -22,6 +22,7 @@
         font-weight: 700;
         &::after {
             content: "+";
+            font-size: 45px;
             
         }
         @media (max-width: $tablet) {
