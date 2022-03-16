@@ -1,8 +1,8 @@
 {
-    "name": "karvon",
+    "name": "brainscloud",
     "version": "1.0.0",
-    "description": "Karvon Group",
-    "author": "SalixovAlisher",
+    "description": "brainscloud",
+    "author": "brainscloud",
     "devDependencies": {
         "@babel/core": "^7.16.12",
         "@babel/preset-env": "^7.16.11",
@@ -30,8 +30,8 @@
         "webpack-stream": "^7.0.0"
     },
     "browserslist": [
-        "last 3 version",
-        "> 0.2%",
+        "last 1 version",
+        "> 1%",
         "IE 10"
     ],
     "dependencies": {

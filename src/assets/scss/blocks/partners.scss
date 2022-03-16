@@ -1,5 +1,5 @@
 .partners {
-    // visibility: hidden;
+    visibility: hidden;
     margin: 100px auto;
     @media (max-width: $tablet) {
         margin: 75px auto;
@@ -7,9 +7,9 @@
         margin: 50px auto 0;
         }
     }
-    // &.show {
-    //     visibility: visible;
-    // }
+    &.show {
+        visibility: visible;
+    }
 }
 
 .partners__slider {
@@ -40,7 +40,7 @@
         }
         @media (max-width:$mobile) {
             width: 90px;
-            padding: 5px;
+            padding: 10px;
         }
         &:hover {
             
