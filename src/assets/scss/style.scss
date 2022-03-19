@@ -14,6 +14,11 @@ html,body {
 *:after {
     box-sizing: border-box;
 }
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 p,h1,h2,h3,h4,h5,h6 {
     margin: 0;
     padding: 0;
