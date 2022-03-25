@@ -2,6 +2,7 @@
 .header {
     display: flex;
     justify-content: center;
+    margin-top: $defaultmargin;
     z-index: 1000;
     position: fixed;
     left: 50%;
@@ -9,12 +10,11 @@
     width: 98vw;
     @media (max-width: $mobile) {
         width: 100vw;
+        margin-top: 0;
+        padding-top: 0;
         }
-    
 }
-
 .header__block {
-    margin-top: $defaultmargin;
     width: 100%;
     padding: 8px 20px;
     display: flex;
@@ -26,6 +26,7 @@
     height: 90px;
     @media (max-width: $tablet) {
         height: 75px;
+        
     }
     @media (max-width: $mobile) {
         height: 60px;

@@ -111,7 +111,7 @@ nums.forEach(num => {
 })
 
 // MODAL
-var modalContacts = document.getElementById('modal__contacts');
+var modalContacts = document.getElementsByClassName('modal__contacts')[0];
 var modalBG = document.getElementsByClassName("modal__backgr")[0];
 var btnContacts = document.getElementById("btn__contacts");
 var modalClose = document.getElementsByClassName("modal__close")[0];
@@ -127,7 +127,9 @@ modalClose.onclick = function() {
 
 modalBG.onclick = function() {
   modalContacts.classList.remove("show__modal");
+  modalMenu.classList.remove("show__menu");
   modalBG.classList.remove("show__modal");
+  
 }
 
 // MODAL
@@ -142,11 +144,8 @@ btnMenu.onclick = function() {
   modalMenu.classList.add("show__menu");
   modalBG.classList.add("show__modal");
 }
-modalBG.onclick = function() {
-  modalMenu.classList.remove("show__menu");
-  modalBG.classList.remove("show__modal");
-}
-menuClose.onclick = function () {
+
+menuClose.onclick = function() {
   modalMenu.classList.remove("show__menu");
   modalBG.classList.remove("show__modal");
   
