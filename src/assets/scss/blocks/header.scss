@@ -139,6 +139,11 @@
     &:hover:after {
         width: 100%;
     }
+    &.active {
+        &:after {
+            width: 100%;
+        }
+    }
     &--mobile,&--mobile:nth-child(3) {
         margin-right: 0;
         margin-bottom: 20px;
@@ -169,6 +174,7 @@
 .header__menu {
     position: fixed;
     top: 0;
+    margin-top: -$defaultmargin;
     left: -1100px;
     width: 63vw;
     height: 100vh;
