@@ -55,7 +55,7 @@
             color: white;
             margin-bottom: 20px;
             font-size: 44px;
-            font-weight: 500;
+            font-weight: 400;
             transform: translateY(200%);
             opacity: 0;
             transition: 1s;
@@ -70,8 +70,9 @@
                 }
             } 
             span {
-                color: $primary;
+                color: white;
                 font-weight: 700;
+                
                 
             }
             @media (max-width: $tablet) {

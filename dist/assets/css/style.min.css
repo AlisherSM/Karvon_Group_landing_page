@@ -452,7 +452,7 @@ p, h1, h2, h3, h4, h5, h6 {
   color: white;
   margin-bottom: 20px;
   font-size: 44px;
-  font-weight: 500;
+  font-weight: 400;
   transform: translateY(200%);
   opacity: 0;
   transition: 1s;
@@ -468,7 +468,7 @@ p, h1, h2, h3, h4, h5, h6 {
   transition-delay: 1s;
 }
 .intro__maintext h2 span {
-  color: #3842a4;
+  color: white;
   font-weight: 700;
 }
 @media (max-width: 991px) {

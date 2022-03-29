@@ -314,6 +314,10 @@ p, h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
+.header__pagesin.active:after {
+    width: 100%;
+}
+
 .header__pagesin--mobile, .header__pagesin--mobile:nth-child(3) {
     margin-right: 0;
     margin-bottom: 20px;
@@ -352,6 +356,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .header__menu {
     position: fixed;
     top: 0;
+    margin-top: -15px;
     left: -1100px;
     width: 63vw;
     height: 100vh;
@@ -1756,9 +1761,20 @@ footer {
     transition: 0.25s;
 }
 
-.about__page__intro {
+.about__page__intro__darken {
+    position: absolute;
     width: 100%;
-    height: 70vh;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 10;
+}
+
+.about__page__intro {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
 }
 
 .about__page__intro img {
@@ -1775,6 +1791,93 @@ footer {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+}
+
+.about__page__intro h2 {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 15;
+    font-size: 64px;
+    text-align: center;
+}
+
+.about__page__content {
+    margin: 100px 0;
+}
+
+.about__page__content h3 {
+    margin-bottom: 50px;
+}
+
+.about__page__content p {
+    padding: 15px;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.about__page__content__advantages {
+    margin: 100px 0;
+}
+
+.about__page__content__advantages__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+
+.about__page__content__advantages__item {
+    justify-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    height: 400px;
+}
+
+.about__page__content__advantages__item p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.about__page__content__advantages__item__block {
+    height: 280px;
+    width: 280px;
+    margin: 0 auto;
+    border: 2px solid #3842a4;
+    border-radius: 50%;
+    padding: 10px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.about__page__content__advantages__item__block:hover {
+    padding: 0;
+}
+
+.about__page__content__advantages__item__block img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border: 2px #3842a4 solid;
 }
 
 .slick-track {
